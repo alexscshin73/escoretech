@@ -1,0 +1,92 @@
+import Image from "next/image";
+import { ArrowRight, MessageCircle } from "lucide-react";
+
+export default function Hero() {
+  return (
+    <section
+      id="inicio"
+      className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-[#1F3589]"
+    >
+      {/* Background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[#152566] via-[#1F3589] to-[#2a45a8]" />
+
+      {/* Decorative circles */}
+      <div className="absolute top-20 right-0 w-96 h-96 rounded-full bg-[#C8102E]/10 blur-3xl" />
+      <div className="absolute bottom-10 left-10 w-72 h-72 rounded-full bg-white/5 blur-2xl" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Text */}
+          <div className="text-white">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-white/80 text-xs font-medium mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C8102E] inline-block" />
+              Monterrey, México
+            </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">
+              Automatización
+              <br />
+              <span className="text-[#C8102E]">inteligente</span> para
+              <br />
+              negocios en México
+            </h1>
+            <p className="text-lg sm:text-xl text-blue-100/80 max-w-lg mb-10 leading-relaxed">
+              S.CoreTech ayuda a empresas y comercios a mejorar su operación con
+              soluciones de Kiosk, POS, ERP, CRM y automatización conectada.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href="#soluciones"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#C8102E] text-white font-semibold hover:bg-[#a00d23] transition-all hover:gap-3"
+              >
+                Conoce nuestras soluciones
+                <ArrowRight size={18} />
+              </a>
+              <a
+                href="#contacto"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border-2 border-white/30 text-white font-semibold hover:bg-white/10 transition-colors"
+              >
+                <MessageCircle size={18} />
+                Contáctanos
+              </a>
+            </div>
+          </div>
+
+          {/* Logo / Visual */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative flex items-center justify-center w-80 h-80 sm:w-96 sm:h-96">
+              <div className="absolute inset-0 rounded-full bg-white/5 border border-white/10" />
+              <div className="absolute inset-8 rounded-full bg-white/5 border border-white/10" />
+              <Image
+                src="/logos/logo-icon.png"
+                alt="S.CoreTech"
+                width={200}
+                height={200}
+                className="relative z-10 drop-shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Stats bar */}
+        <div className="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-6">
+          {[
+            { value: "Kiosk & POS", label: "Autoservicio" },
+            { value: "ERP & CRM", label: "Gestión empresarial" },
+            { value: "Automatización", label: "Procesos operativos" },
+            { value: "Data & BI", label: "Inteligencia de negocio" },
+          ].map((item) => (
+            <div
+              key={item.value}
+              className="flex flex-col items-center text-center p-4 rounded-2xl bg-white/5 border border-white/10"
+            >
+              <span className="text-white font-bold text-base sm:text-lg">
+                {item.value}
+              </span>
+              <span className="text-blue-200/70 text-xs mt-1">{item.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
