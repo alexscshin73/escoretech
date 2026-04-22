@@ -58,7 +58,14 @@ export default function Contact() {
                 <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">
                   {c.locationLabel}
                 </p>
-                <p className="text-gray-900 font-medium">{c.location}</p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Rio+Missouri+555,+Del+Valle,+66220+San+Pedro+Garza+Garc%C3%ADa,+N.L.,+Mexico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-900 font-medium hover:text-[#4A6FA5] transition-colors underline-offset-2 hover:underline"
+                >
+                  {c.location}
+                </a>
               </div>
             </div>
 

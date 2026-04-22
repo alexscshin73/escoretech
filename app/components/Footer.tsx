@@ -52,7 +52,16 @@ export default function Footer() {
                   info@escoretech.com.mx
                 </a>
               </li>
-              <li>{f.location}</li>
+              <li>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Rio+Missouri+555,+Del+Valle,+66220+San+Pedro+Garza+Garc%C3%ADa,+N.L.,+Mexico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition-colors hover:underline underline-offset-2"
+                >
+                  {f.location}
+                </a>
+              </li>
               <li>
                 <a href="tel:+528130988836" className="hover:text-white transition-colors">
                   +52-81-3098-8836

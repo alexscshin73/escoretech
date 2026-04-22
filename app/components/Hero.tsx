@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[#4A6FA5]"
+      className="relative min-h-screen flex items-center pt-[76px] overflow-hidden bg-[#4A6FA5]"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-[#2D4070] via-[#4A6FA5] to-[#5B7FA8]" />
       <div className="absolute top-20 right-0 w-96 h-96 rounded-full bg-[#C0556A]/10 blur-3xl" />
