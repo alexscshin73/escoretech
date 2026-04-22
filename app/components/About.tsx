@@ -14,10 +14,10 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="inline-block text-[#C8102E] text-sm font-semibold uppercase tracking-widest mb-4">
+            <span className="inline-block text-[#C0556A] text-sm font-semibold uppercase tracking-widest mb-4">
               {a.label}
             </span>
-            <h2 className="text-4xl sm:text-5xl font-bold text-[#1F3589] leading-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl font-bold text-[#4A6FA5] leading-tight mb-6">
               {a.heading1}
               <br />
               {a.heading2}
@@ -32,10 +32,10 @@ export default function About() {
               return (
                 <div
                   key={label}
-                  className="group flex flex-col items-center text-center p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-[#C8102E]/20 hover:bg-[#C8102E]/5 transition-all"
+                  className="group flex flex-col items-center text-center p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:border-[#C0556A]/20 hover:bg-[#C0556A]/5 transition-all"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-[#1F3589]/10 flex items-center justify-center mb-4 group-hover:bg-[#C8102E]/10 transition-colors">
-                    <Icon size={24} className="text-[#1F3589] group-hover:text-[#C8102E] transition-colors" />
+                  <div className="w-12 h-12 rounded-xl bg-[#4A6FA5]/10 flex items-center justify-center mb-4 group-hover:bg-[#C0556A]/10 transition-colors">
+                    <Icon size={24} className="text-[#4A6FA5] group-hover:text-[#C0556A] transition-colors" />
                   </div>
                   <span className="font-semibold text-gray-800">{label}</span>
                 </div>

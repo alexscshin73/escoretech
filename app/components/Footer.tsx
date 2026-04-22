@@ -10,7 +10,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#152566] text-white">
+    <footer className="bg-[#2D4070] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid sm:grid-cols-3 gap-8 items-start mb-10">
           <div>
@@ -53,6 +53,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>{f.location}</li>
+              <li>
+                <a href="tel:+528130988836" className="hover:text-white transition-colors">
+                  +52-81-3098-8836
+                </a>
+              </li>
               <li>
                 <a href="https://escoretech.com.mx" className="hover:text-white transition-colors">
                   www.escoretech.com.mx

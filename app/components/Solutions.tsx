@@ -4,7 +4,7 @@ import { Monitor, Database, Cpu, LineChart } from "lucide-react";
 import { useLanguage } from "../i18n/LanguageContext";
 
 const icons = [Monitor, Database, Cpu, LineChart];
-const colors = ["#C8102E", "#1F3589", "#C8102E", "#1F3589"];
+const colors = ["#C0556A", "#4A6FA5", "#C0556A", "#4A6FA5"];
 
 export default function Solutions() {
   const { t } = useLanguage();
@@ -14,10 +14,10 @@ export default function Solutions() {
     <section id="soluciones" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="inline-block text-[#C8102E] text-sm font-semibold uppercase tracking-widest mb-4">
+          <span className="inline-block text-[#C0556A] text-sm font-semibold uppercase tracking-widest mb-4">
             {s.label}
           </span>
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#1F3589]">{s.heading}</h2>
+          <h2 className="text-4xl sm:text-5xl font-bold text-[#4A6FA5]">{s.heading}</h2>
           <p className="mt-4 text-gray-600 text-lg max-w-2xl mx-auto">{s.sub}</p>
         </div>
 

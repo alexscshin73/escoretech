@@ -11,23 +11,23 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center pt-16 overflow-hidden bg-[#1F3589]"
+      className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-[#4A6FA5]"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-[#152566] via-[#1F3589] to-[#2a45a8]" />
-      <div className="absolute top-20 right-0 w-96 h-96 rounded-full bg-[#C8102E]/10 blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#2D4070] via-[#4A6FA5] to-[#5B7FA8]" />
+      <div className="absolute top-20 right-0 w-96 h-96 rounded-full bg-[#C0556A]/10 blur-3xl" />
       <div className="absolute bottom-10 left-10 w-72 h-72 rounded-full bg-white/5 blur-2xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-white">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-white/80 text-xs font-medium mb-6">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#C8102E] inline-block" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C0556A] inline-block" />
               {h.badge}
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight mb-6">
               {h.headline1}
               <br />
-              <span className="text-[#C8102E]">{h.headline2}</span>{" "}
+              <span className="text-[#C0556A]">{h.headline2}</span>{" "}
               {h.headline3}
             </h1>
             <p className="text-lg sm:text-xl text-blue-100/80 max-w-lg mb-10 leading-relaxed">
@@ -36,7 +36,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="#soluciones"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#C8102E] text-white font-semibold hover:bg-[#a00d23] transition-all hover:gap-3"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#C0556A] text-white font-semibold hover:bg-[#A8445A] transition-all hover:gap-3"
               >
                 {h.cta1}
                 <ArrowRight size={18} />
