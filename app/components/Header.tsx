@@ -12,12 +12,9 @@ const localeLabels: Record<Locale, string> = {
   ko: "한",
 };
 
-// Fixed widths per nav slot based on longest label across all locales
-// Slot 0: Inicio / Home / 홈
-// Slot 1: Nosotros / About / 소개
-// Slot 2: Soluciones / Solutions / 솔루션
-// Slot 3: Contacto / Contact / 문의
-const NAV_WIDTHS = ["w-[62px]", "w-[78px]", "w-[92px]", "w-[78px]"];
+// Fixed widths locked to Spanish (longest language) per slot:
+// "Inicio" | "Nosotros" | "Soluciones" | "Contacto"
+const NAV_WIDTHS = ["w-[52px]", "w-[76px]", "w-[88px]", "w-[74px]"];
 
 export default function Header() {
   const { t, locale, setLocale } = useLanguage();
@@ -70,7 +67,7 @@ export default function Header() {
 
             <a
               href="#contacto"
-              className="inline-flex items-center px-5 py-2 rounded-full bg-[#C0556A] text-white text-sm font-semibold hover:bg-[#A8445A] transition-colors whitespace-nowrap"
+              className="inline-flex items-center justify-center w-[130px] py-2 rounded-full bg-[#C0556A] text-white text-sm font-semibold hover:bg-[#A8445A] transition-colors whitespace-nowrap"
             >
               {t.header.cta}
             </a>
