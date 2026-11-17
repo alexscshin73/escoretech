@@ -18,7 +18,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `${c.nameLabel}: ${form.name}\n${c.emailFieldLabel}: ${form.email}\n\n${c.messageLabel}:\n${form.message}`
     );
-    window.location.href = `mailto:info@escoretech.com.mx?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:sales@escoretech.com.mx,cs@escoretech.com.mx?subject=${subject}&body=${body}`;
     setSent(true);
   };
 
@@ -47,10 +47,16 @@ export default function Contact() {
                     {c.emailLabel}
                   </p>
                   <a
-                    href="mailto:info@escoretech.com.mx"
-                    className="text-gray-900 font-medium hover:text-[#C0556A] transition-colors"
+                    href="mailto:sales@escoretech.com.mx"
+                    className="block text-gray-900 font-medium hover:text-[#C0556A] transition-colors"
                   >
-                    info@escoretech.com.mx
+                    sales@escoretech.com.mx
+                  </a>
+                  <a
+                    href="mailto:cs@escoretech.com.mx"
+                    className="block text-gray-900 font-medium hover:text-[#C0556A] transition-colors"
+                  >
+                    cs@escoretech.com.mx
                   </a>
                 </div>
               </div>
@@ -81,12 +87,12 @@ export default function Contact() {
                     {c.whatsappLabel}
                   </p>
                   <a
-                    href="https://wa.me/528130988836"
+                    href="https://wa.me/528118285399"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-900 font-medium hover:text-[#25D366] transition-colors"
                   >
-                    +52-81-3098-8836
+                    +52-81-1828-5399
                   </a>
                 </div>
               </div>

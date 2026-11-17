@@ -48,8 +48,13 @@ export default function Footer() {
             </p>
             <ul className="space-y-2 text-sm text-blue-200/70">
               <li>
-                <a href="mailto:info@escoretech.com.mx" className="hover:text-white transition-colors">
-                  info@escoretech.com.mx
+                <a href="mailto:sales@escoretech.com.mx" className="hover:text-white transition-colors">
+                  sales@escoretech.com.mx
+                </a>
+              </li>
+              <li>
+                <a href="mailto:cs@escoretech.com.mx" className="hover:text-white transition-colors">
+                  cs@escoretech.com.mx
                 </a>
               </li>
               <li>
@@ -63,8 +68,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="tel:+528130988836" className="hover:text-white transition-colors">
-                  +52-81-3098-8836
+                <a href="tel:+528118285399" className="hover:text-white transition-colors">
+                  +52-81-1828-5399
                 </a>
               </li>
               <li>
